@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Samuel's Portfolio</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/3-col-portfolio.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">Samuel Taylor's Geovisualization Portfolio</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="shortbio.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="files/Samuel_Taylor_CV_4_12_24.pdf">CV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="mailto:samuel-zebarth@uiowa.edu">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="files/samuel_taylor_flowmapper.json" download="files/samuel_taylor_flowmapper.json">Flowmapper Data</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading -->
+      <h1 class="my-4 text-center">Flow Mapping of US Migration
+        <small>(1887 - 1924)</small>
+      </h1>
+
+      <div class="row">
+          <div class="container">
+              <img class="card-img-top" src="images/flowmap.png" alt="">
+              <p class="card-text text-center">(Figure 1. Finalized US Migration Flow Map)</p>
+         </div>
+               </div>
+      <!-- /.row -->
+      <br>
+      <h5>Places that attract (receive) the most flows, and the places that send the most flows:</h5>
+      <p>According to my produced map, the places that recieve the most significant flows are the midwestern and lower midwestern states. 
+        However, while they receive a lot of migration, they also produce or send the most flows between themselves and outwards toward non-midwestern states. 
+        What is particularly interesting is that Oklahoma is the largest receiver of flows/has the most significant net gain. 
+        In contrast, only a state over Missouri has the most significant outflows/net loss of individuals (even though the state receives a ton).</p>
+
+      <h5>General direction of flows (e.g., north-south, east-west, etc.) with context to the geography of the flow data set:</h5>
+      <p>The general direction of flows is highly dependent on the starting point. If you are talking about Texas, it's North; if it's Washington, the flows come from a southern direction. 
+        However, as we move toward the midwest, all hell breaks loose, and movement happens in almost all cardinal directions. 
+        The flows are fantastic for showing movement in general, as well as the starting and ending points, but to understand movement through time, you have to look at all relevant information, which is answered below in question 3. </p>
+
+      <h5>Flow patterns in relation to location characteristics displayed by node symbol and choropleth base map:</h5>
+      <p>Combining the relevant information from all three variables (the chloropleth, nodes, and flows, there is a discernable movement pattern). 
+        The most significant flows of individuals move from the external midwestern states (from the Canadian to the Mexican border) to Oklahoma, which is most likely showing the aftermath of the U.S. government's 
+        forced removal of natives from the state in the late 19th century, and the influx of the "sooner" movement and Oklahoma land rush.
+         While other movements can be discerned throughout the Eastern seaboard and Pacific Northwest states, the other direction I want to note is the Western push from midwestern states to California. 
+        By 1890, midwestern immigrants had become California's largest population group, which is captured here in this map.  </p><br>
+
+      <h5>Other relevant justification of mapping:</h5><br>
+      <div class="row">
+        <div class="container">
+            <img class="card-img-top" src="images/flowmap_3.png" alt="">
+            <p class="card-text text-center">(Figure 2. US Migration Map, Natural Breaks Chloropleth)</p>
+       </div>
+             </div><br>
+
+
+      <h6>Justification of Chloropleth Map:</h6>
+      <p>To begin, we are dealing with a non-normal dataset, which is expected given that we are measuring human movement through time. 
+        Therefore, the classification schemes that should be used are natural breaks and manual breaks. 
+        While natural breaks is better at minimizing the variance within the class and maximizing the variance between classes, 
+        I personally did not like that it would group positive and negative values into classes around zero (Figure 2, class 4 of legend). 
+        Therefore, I opted to use manual breaks with selections close to the natural break locations. You can see that this changes the map readers understanding
+         of migration for a few states that experienced an increase in flow but would not have appeared this way with natural breaks 
+         (Figure 1, Figure 2; Minnesota, Ohio, Nevada, some eastern seaboard states). The diverging color scheme was selected as this is a diverging dataset with a
+          meaningful zero; one could argue that the zero is significant as it shows no change in population, but I argue it is also important as the boundary between 
+          loss and gain and is therefore essential to distinguish in the manual breaks choice. 
+        The blue-red color map was used as the most visually appealing, with red indicating a net loss and blue indicating a net gain.  </p>
+
+      <h6>Justification of Nodes:</h6>
+      <p>When observing the underlying total flow data for the nodes, we are dealing with a similar non-normal dataset, however, no negative values.
+         While several classification choices could be used, particularly some that are more accurate to the underlying data (natural breaks), 
+         I ultimately decided on a proportional scale with a monotone color. What I ultimately took away from the readings for this assignment is that color and classes are powerful tools, 
+         which limits how much you can use on a single map with multiple visual aspects. The color comes from the underlying choropleth map, 
+         and using color here would only confuse the reader further or require them to put more effort into understanding the map story. Based on the research, 
+         the monotone coloring will lead to the most straightforward interpretation of total movement. I tried a custom coloration of white to white, but it was not as clean as an "all black" color scheme. 
+         Secondly, the proportional scale had the lowest number of classes, and when I used other classification methods, such as natural breaks with a minimum of four class sizes, 
+         this only added to the visual clutter. Even though there may be a better classification scheme given the data, such as a three-class manual breaks approach, 
+        in this particular case, the proportional does its job quite well WHILE allowing the reader to compare state to state.  </p><br>
+
+        <div class="row">
+          <div class="container">
+              <img class="card-img-top" src="images/flowmap_2.png" alt="">
+              <p class="card-text text-center">(Figure 3. 3 US Migration Map, Reduced Flows)</p>
+         </div>
+               </div><br>
+
+      <h6> Justification of Flows:</h6>
+      <p>In the same vein as the previous justifications, we have non-normal data, and I used manual breaks. 
+        I did this to lower the class sizes to three; yes, 4 - 7 would generally be better, but it helps show the story of movement while reducing clutter. 
+        First, differentiating between large movements and small movements is substantially more straightforward. 
+        Following the research again, using the monotone arrow and tapered flow line produced the most correct and quickest response from the assessed users, and I applied the same knowledge here.
+         While a tapered flowline was "okay" at getting flow across, the arrowhead was simply better at telling the story of directionality.
+          Secondly, it does this without using color, which is already present in the underlying choropleth map. 
+          The color being a part of flows a vital takeaway from the assignment papers, and what was clear is that flows with color can be highly distracting. 
+          Therefore, I chose to avoid the colored flow approach entirely. 
+          Finally, The instructions ask for us to "Try to limit the visual clutter produced by overlapping flow lines by carefully adjusting the show top flows option on Flow Symbology." 
+          The largest overlap of flows, or greatest clutter, occurs in Iowa, Missouri, Kansas, Nebraska, Oklahoma, Arkansas, and Texas. 
+          However, I argue that reducing the flows beyond its current setting (100) doesn't impact the cluttered area, and more importantly, 
+          once top flows are reduced to the point it does affect these states (~70) it has severely impacted the story of movement in the states. 
+          Yes, it may be more visually appealing (Figure 3), but it throws away the story of movement in several states and skews the story of human movement compared to the more cluttered but accurate map (Figure 1). 
+        Therefore, I am keeping the more cluttered flows with its limited classes instead. </p>
+    </div>
+    
+    
+    
+    <!-- /.container -->
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Samuel Taylor 2024</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+
+</html>
