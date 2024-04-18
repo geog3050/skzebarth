@@ -12,4 +12,4 @@ Samuel Taylor is a doctoral candidate in the Department of Geographical and Sust
 [Samuel Taylor's CV](/files/Samuel_Taylor_CV_4_12_24.pdf)
 
 ### Other Work:
-Check out this [link](<a href=https://geog3540.github.io/skzebarth/><a>) to see Samuel Taylor's Geovisualization portfolio.
+Check out this [link](https://geog3540.github.io/skzebarth/) to see Samuel Taylor's Geovisualization portfolio.
