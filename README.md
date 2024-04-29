@@ -11,7 +11,7 @@ Samuel Taylor is a doctoral candidate in the Department of Geographical and Sust
 
 [Samuel Taylor's CV](/files/Samuel_Taylor_CV_4_12_24.pdf)
 
-If you would like to contact the author you can<a class="nav-link" href="mailto:samuel-zebarth@uiowa.edu">contact them here.</a> 
+If you would like to contact the author you can <a class="nav-link" href="mailto:samuel-zebarth@uiowa.edu">contact them here.</a> 
 
 ### Other Work:
 Check out this [link](https://geog3540.github.io/skzebarth/) to see Samuel Taylor's Geovisualization portfolio.
